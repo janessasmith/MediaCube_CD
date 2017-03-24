@@ -1,0 +1,90 @@
+.dropdown {
+    margin-right: 16px;
+}
+
+.dropdown .bth-fix {
+    line-height: 32px;
+    width: 142px;
+    height: 32px;
+    margin-right: 0!important;
+    padding: 0;
+    padding-left: 17px !important;
+    text-align: left;
+    border-color: #ddd;
+    border-radius: 50px;
+    box-shadow: none!important;
+}
+
+button.bth-fix:focus,
+button.bth-fix:active,
+button.bth-fix .open > .dropdown-toggle.btn-default {
+    outline: none!important;
+    background-color: white!important;
+    box-shadow: none!important;
+}
+
+.dropdown,
+.btn-default:hover {
+    outline: none;
+    background: white;
+    box-shadow: none!important;
+}
+
+.dropdown .btn-fix-title {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 80%;
+    text-overflow: ellipsis;
+    color: #646464;
+}
+
+.dropdown-menu > li > a:focus {
+    color: white!important;
+    background: #2182b8;
+}
+
+.dropdown .dropdown-menu {
+    min-width: 142px;
+    margin: 0;
+    padding: 2px 0;
+    border: 1px solid #ddd;
+}
+
+.dropdown .dropdown-menu li a {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 20px;
+    color: #646464;
+    cursor: pointer;
+}
+.dropdown .dropdown-menu li a:hover {
+    color: #fff;
+    background-color: #2178c5;
+}
+
+
+.dropdown-menu .dropdown-menu-item {
+    // width: 90%;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dropdown .btn .caret {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 8px;
+    height: 5px;
+    border: none;
+    background: url('./editingCenter/images/blue-skin/editing-rightnav_icon02.png') no-repeat;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default, .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    background-color: #fff;
+    border-color: #ddd;
+}

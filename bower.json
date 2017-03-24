@@ -1,0 +1,27 @@
+{
+    "name": "app",
+    "description": "成都市政府智能政务平台",
+    "main": "",
+    "authors": [
+        "TRS FED"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "angularJs",
+        "javascript",
+        "grunt",
+        "bower"
+    ],
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "dist",
+        "tmp",
+        ".DS_Store",
+        ".idea",
+        "test",
+        "tests"
+    ]
+}

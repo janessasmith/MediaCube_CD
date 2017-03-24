@@ -1,0 +1,49 @@
+<div class="editing-list">
+    <tabset justified="true" class="editing-nav">
+        <tab heading="网站" class="editing-nav-website pointer" active="status.tab.website.isTabSelect" ng-click="setTabSelected('website')">
+            <div ui-view="website"></div>
+        </tab>
+        <tab heading="APP" class="editing-nav-app" active="status.tab.app.isTabSelect" ng-init="hasPosition('app')" ng-click="setTabSelected('app')">
+            <div ui-view="app"></div>
+        </tab>
+        <tab heading="微信" class="editing-nav-weixin pointer" active="status.tab.weixin.isTabSelect" ng-click="setTabSelected('weixin')">
+            <div ui-view="weixin"></div>
+        </tab>
+        <tab heading="微博" class="editing-nav-weibo pointer" active="status.tab.weibo.isTabSelect" ng-click="setTabSelected('weibo')">
+            <div ui-view="weibo"></div>
+        </tab>
+        <!-- <button ng-show="showMore()" type="button" class="editing-more" data-placement="right-bottom" data-auto-close="1" data-template-url="./editingCenter/service/moreTabList/moreTabList.html" data-animation="am-slide-left"  bs-popover></button> -->
+    </tabset>
+    <!-- 站点栏目订阅标题 -->
+    <div class="editing-subscribe">
+        <div class="editing-subscribe-list">
+            <span>站点栏目订阅</span>
+            <!-- 订阅按钮 -->
+            <span class="subscribe-btn" ng-click="querySitesOnSubscribeCenter()"></span>
+        </div>
+        <div ng-click="status.isDropdown=!status.isDropdown" ng-init="status.isDropdown=true">
+            <span class="subscribe-mark" ng-class="{'isDropdown': status.isDropdown}"></span>
+        </div>
+    </div>
+    <!-- 站点栏目订阅列表-->
+    <div class="subscribe-list-wrap" ng-show="status.isDropdown">
+        <accordion close-others="true">
+            <accordion-group class="subscribe-column" ng-repeat="site in data.subsItems" is-open="site.isOpen">
+                <accordion-heading>
+                    <span class="subscribe-column-title" ng-bind="site.SITEDESC" title="{{site.SITEDESC}}" ng-click="querySubscribeChannels(site)"></span>
+                    <span class="subscribe-column-mark"></span>
+                </accordion-heading>
+                <ul>
+                    <li ng-repeat="channel in site.subsChannel track by $index" ng-init="channelIndex=$index;channel.status.hover = ''" ng-mouseenter="channel.status.hover = hover" ng-mouseleave="channel.status.hover = '' ">
+                        <span ng-bind="channel.CHNLDESC" title="{{channel.CHNLDESC}}"></span>
+                        <i class="subscribe-delete" ng-click="removeSubscribeChannel(channel.CHANNELID,site,channelIndex); $event.stopPropagation()" ng-show="channel.status.hover == hover"></i>
+                    </li>
+                </ul>
+            </accordion-group>
+        </accordion>
+    </div>
+    <!-- 管理废稿箱 -->
+    <div class="editing-drop-draft">
+        <span class="text">管理废稿箱</span>
+    </div>
+</div>

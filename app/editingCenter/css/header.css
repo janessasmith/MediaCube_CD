@@ -1,0 +1,144 @@
+/*header导航条*/
+.header-bar {
+  height: 90px;
+  background: url('login/img/cd-head-bac.jpg') no-repeat center;
+  overflow: hidden;
+}
+.header-bar .logo-box {
+  float: left;
+}
+.header-bar .img-responsive {
+  margin: 36px 0 0 28px;
+}
+.nav-bar-box {
+  float: right;
+}
+.nav-bar-box .nav-bar {
+  float: left;
+}
+.nav-bar-box .nav-bar ul {
+  margin: 52px 27px 0 0;
+  padding-top: 4px;
+  overflow: hidden;
+}
+.nav-bar-box .nav-bar li {
+  float: left;
+  width: 115px;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 4px;
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+  font: 14px/34px 'Microsoft YaHei', '微软雅黑';
+  background: rgba(1, 87, 164, 0.6);
+  list-style: none;
+}
+.nav-bar-box .nav-bar li:hover {
+  margin-top: -4px;
+  height: 38px;
+  line-height: 40px;
+  background: #015293;
+}
+.nav-bar-box .nav-bar li.is-active {
+  margin-top: -4px;
+  height: 38px;
+  line-height: 40px;
+  background: #015293;
+}
+.nav-bar-box .nav-bar li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-bar-box .nav-bar li span {
+  padding: 5px 0 5px 28px;
+}
+.nav-bar-box .nav-bar li span.icon-edit {
+  background: url('editingCenter/images/nav-1.png') no-repeat left center;
+}
+.nav-bar-box .nav-bar li span.icon-interact {
+  background: url('editingCenter/images/nav-2.png') no-repeat left center;
+}
+.nav-bar-box .nav-bar li span.icon-search {
+  background: url('editingCenter/images/nav-3.png') no-repeat left center;
+}
+.nav-bar-box .nav-bar li span.icon-check {
+  background: url('editingCenter/images/nav-4.png') no-repeat left center;
+}
+.nav-bar-box .nav-bar li span.icon-run {
+  background: url('editingCenter/images/nav-5.png') no-repeat left center;
+}
+.header-rt-box {
+  float: right;
+  height: 55px;
+  margin-top: 35px;
+}
+.header-rt-box .theme-pick {
+  float: left;
+  width: 92px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 19px;
+  border-radius: 12px;
+  font-size: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+.header-rt-box .theme-pick .theme {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-rt-box .theme-pick span {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+}
+.header-rt-box .theme-pick span:hover {
+  width: 17px;
+  height: 17px;
+  margin: -2px 1px;
+}
+.header-rt-box .theme-pick span.is-active {
+  width: 17px;
+  height: 17px;
+  margin: -2px 1px;
+}
+.header-rt-box .theme-pick .red-theme {
+  background: #d33d3c;
+}
+.header-rt-box .theme-pick .blue-theme {
+  background: #165f97;
+}
+.header-rt-box .theme-pick .green-theme {
+  background: #48bc8a;
+}
+.header-rt-box .theme-pick .orange-theme {
+  background: #f5b433;
+}
+.header-rt-box .login-user {
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin: 7px 7px 0 12px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.header-rt-box .login-user img {
+  width: 30px;
+  height: 30px;
+}
+.header-rt-box .settings {
+  float: left;
+  width: 23px;
+  height: 23px;
+  margin: 19px 12px 0 0;
+}
+.header-rt-box .settings a {
+  display: block;
+  height: 23px;
+  background: url("editingCenter/images/nav-6.png") no-repeat center;
+}

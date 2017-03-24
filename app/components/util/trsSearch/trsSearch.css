@@ -1,0 +1,48 @@
+trs-search .dropdown {
+  margin-right: 0;
+  height: 34px;
+  line-height: 28px;
+  border: 1px solid #dddddd;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+trs-search .dropdown .dropdown-menu {
+  min-width: 100%!important;
+}
+trs-search .dropdown .btn .caret {
+  right: 5px;
+}
+trs-search .dropdown .bth-fix {
+  width: 90px;
+  height: 28px;
+  line-height: 28px;
+  margin-top: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  border-right: 1px solid #dddddd;
+}
+trs-search .input-group {
+  float: right;
+}
+trs-search .input-group input {
+  border-left: 0;
+  border-right: 0!important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  box-shadow: none!important;
+  border-color: #dddddd;
+}
+trs-search .input-group input:focus {
+  border-color: #dddddd;
+}
+trs-search .input-group .btn-search {
+  background: url('components/util/trsSearch/images/sch.png') no-repeat center;
+  width: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+  border-color: #dddddd;
+}

@@ -1,0 +1,1082 @@
+/* 全局样式 */
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+a {
+  font-size: 14px;
+  font-family: Tahoma, Arial, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none!important;
+}
+.ovfl-hdn {
+  overflow: hidden;
+}
+body {
+  font-size: 14px;
+  font-family: Tahoma, Arial, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+/* 全局样式 end */
+/* 左侧导航CSS样式 2017.3.2 */
+/*去除col-md自带的左右pading值*/
+.editing-header-fixed,
+.editing-left-fixed {
+  padding-right: 0;
+  padding-left: 0;
+}
+/*左侧主导航ul底部加线*/
+.editing-height-fixed {
+  height: 100%;
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
+  background-color: #015293;
+}
+.editing-list {
+  position: relative;
+}
+.editing-list ul {
+  height: 40px;
+  background-color: #f5f5f5;
+}
+.editing-list ul li a {
+  text-align: center;
+}
+.editing-nav ul li {
+  height: 30px;
+  line-height: 30px;
+}
+.editing-nav ul li a {
+  display: block;
+  padding: 0!important;
+  height: 30px;
+  line-height: 30px;
+}
+.editing-nav ul li.active a {
+  padding: 0!important;
+  color: #41baff!important;
+  border: none!important;
+}
+.editing-nav > ul {
+  -webkit-box-shadow: inset 0 0 7px #d8dade;
+  -moz-box-shadow: inset 0 0 7px #d8dade;
+  box-shadow: inset 0 0 7px #d8dade;
+}
+.editing-nav ul li > a:hover,
+.editing-downlist .nav-tabs li:hover {
+  background: none;
+  border: none;
+}
+/* ui-bootstarp tabset 样式修改 布局详细看ui-bootstrap-tpls.js */
+.nav-tabs.nav-justified > li {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+}
+.nav-tabs.nav-justified > li > a {
+  color: #455263;
+  border: none;
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #015293;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* .nav-tabs.nav-justified > li {
+    position: relative;
+    z-index: 11;
+} */
+.nav > li > a:focus {
+  background: none;
+}
+/* .tab-content {
+    position: relative;
+    z-index: 11;
+} */
+/* ui-bootstarp tabset 样式修改 end */
+.editing-site {
+  position: relative;
+}
+.editing-site .editing-site-list {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #41baff;
+  background-color: #015293;
+}
+.editing-site .editing-site-list .site-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin: 0 10px 0 18px;
+  vertical-align: -3px;
+}
+.editing-site .site-mark {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.editing-site .site-list-wrap {
+  position: absolute;
+  z-index: 30;
+  top: 36px;
+  left: 0;
+  width: 100%;
+}
+.editing-site .site-list-wrap .site-list {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2178c5;
+  border-bottom: 1px solid #064c84;
+}
+.editing-site .site-list-wrap .site-list:last-child {
+  border-bottom: none;
+}
+.editing-site .site-list-wrap .site-list span {
+  display: inline-block;
+  padding-left: 50px;
+}
+.editing-site .site-list-wrap .site-list img {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+}
+/* treecontrol样式调整 */
+.editing-downlist .nav-tabs {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #064c84;
+  border-left: none;
+  border-right: none;
+  background-color: #2178c5;
+}
+.editing-downlist .nav-tabs li {
+  position: relative;
+  width: 25%;
+  height: 38px;
+}
+.editing-downlist .nav-tabs li a {
+  height: 38px;
+  line-height: 38px;
+  margin-right: 0;
+  color: #fff;
+  background: none;
+  border: none;
+  border-right: 1px solid #064c84!important;
+  border-radius: 0;
+}
+.editing-downlist .nav-tabs li.active {
+  background-color: #015293;
+}
+.editing-downlist .nav-tabs li.active a {
+  color: #41baff!important;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 7px #003c6c;
+  -moz-box-shadow: inset 0 0 7px #003c6c;
+  box-shadow: inset 0 0 7px #003c6c;
+}
+.editing-downlist .nav-tabs li.active a:hover {
+  color: #41baff!important;
+  background-color: #015293;
+  border: none;
+  border-radius: 0;
+}
+.editing-downlist .nav-tabs li:hover {
+  background: none;
+}
+.editing-downlist .tab-content {
+  background-color: #015293;
+}
+/* treecontrol样式调整 end */
+/* accordion中的panel */
+.tab-content .panel-group .panel + .panel {
+  margin-top: 0;
+}
+.panel-group {
+  margin-bottom: 0;
+}
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.panel {
+  border: none;
+}
+.panel-default > .panel-heading {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+}
+.panel-title a {
+  display: block;
+  text-decoration: none;
+}
+.panel-body {
+  padding: 0;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: #233a5a;
+}
+/* accordion中的panel end */
+/* 常用栏目 样式 */
+.editing-column .panel-heading .panel-title {
+  padding-left: 0;
+}
+.editing-column {
+  position: relative;
+  border-bottom: 1px solid #2a6ea4!important;
+  -webkit-box-shadow: 0 1px 1px #064679;
+  -moz-box-shadow: 0 1px 1px #064679;
+  box-shadow: 0 1px 1px #064679;
+}
+.editing-column .panel-heading {
+  line-height: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #374760;
+  /*background:url(./editingCenter/app/images/l9.png) 33px center no-repeat;*/
+}
+.editing-column .panel-title {
+  font-size: 14px;
+  line-height: 40px;
+}
+.editing-column span.editing-column-title {
+  display: block;
+  width: 100%;
+  padding-left: 42px;
+  background: #015293 url("editingCenter/images/blue-skin/editing-leftnav_icon04.png") no-repeat 18px center;
+}
+.editing-column .editing-column-mark {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.editing-column ul {
+  height: auto!important;
+  padding-top: 0;
+  border-top: 1px solid #2a6ea4;
+}
+.editing-column ul li {
+  position: relative;
+  height: 40px!important;
+  line-height: 40px!important;
+  padding-left: 44px;
+  background-color: #1580a3;
+  border-bottom: 1px solid #2a6ea4;
+  -webkit-box-shadow: 0 1px 1px #064679;
+  -moz-box-shadow: 0 1px 1px #064679;
+  box-shadow: 0 1px 1px #064679;
+  cursor: pointer;
+}
+.editing-column ul li:last-child {
+  border-bottom: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.editing-column ul li:hover a {
+  text-decoration: none;
+}
+.editing-column ul li:active {
+  text-decoration: none;
+}
+.editing-column ul li a {
+  display: inline-block !important;
+  height: 40px!important;
+  line-height: 40px!important;
+  margin-left: 3px;
+  text-align: left!important;
+  color: #fff;
+}
+.editing-column .editing-remove-icon {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  width: 15px;
+  height: 40px;
+  cursor: pointer;
+}
+/* 常用栏目 样式 end */
+/* 站点栏目订阅 */
+.editing-subscribe {
+  position: relative;
+  border-top: 1px solid #afc6dc;
+  border-bottom: 1px solid #4b85c1;
+}
+.editing-subscribe .editing-subscribe-list {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #3379c1;
+  border-bottom: 1px solid #2769ad;
+  cursor: pointer;
+}
+.editing-subscribe .editing-subscribe-list .subscribe-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px 0 17px;
+  vertical-align: -3px;
+}
+.editing-subscribe .subscribe-mark {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.editing-subscribe .subscribe-btn {
+  position: absolute;
+  top: 14px;
+  right: 36px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.subscribe-list-wrap {
+  position: relative;
+}
+.subscribe-list-wrap .panel {
+  line-height: 40px;
+  background-color: #296eb5;
+}
+.subscribe-list-wrap .panel-heading {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #296eb5;
+}
+.subscribe-list-wrap .panel-title {
+  font-size: 14px;
+  line-height: 40px;
+}
+.subscribe-list-wrap span.subscribe-column-title {
+  padding-left: 46px;
+  background: #296eb5 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
+}
+.subscribe-list-wrap .subscribe-column-mark {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+.subscribe-list-wrap ul {
+  height: auto;
+  background-color: #296eb5;
+}
+.subscribe-list-wrap ul li {
+  position: relative;
+  border-top: 1px solid #4b85c1;
+  border-bottom: 1px solid #2769ad;
+}
+.subscribe-list-wrap ul li span {
+  display: block;
+  padding-left: 64px;
+  color: #fff;
+  background: url("components/util/trsTree/images/file.png") no-repeat 44px center;
+}
+.subscribe-list-wrap ul li .subscribe-delete {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 15px;
+  height: 14px;
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon06.png") no-repeat;
+  cursor: pointer;
+}
+/* 站点栏目订阅  end */
+/* 站点栏目订阅弹窗 */
+.subscribe-window .modal-dialog {
+  width: 650px;
+}
+.subscribe-window .modal-content {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.subscribe-modal {
+  width: 650px;
+  border: 4px solid #ddd;
+}
+.subscribe-modal .header {
+  height: 42px;
+  line-height: 42px;
+}
+.subscribe-modal .header span {
+  float: left;
+  margin-left: 15px;
+  color: #333;
+  font-weight: 800;
+}
+.subscribe-modal .header img {
+  float: right;
+  width: 18px;
+  height: 18px;
+  margin: 12px 10px 0 0;
+  cursor: pointer;
+}
+.subscribe-modal .content {
+  position: relative;
+}
+.subscribe-modal .content .subscribe-channels {
+  height: 30px;
+  line-height: 30px;
+  background-color: #f0f2f5;
+}
+.subscribe-modal .content .subscribe-channels ul li {
+  float: left;
+  width: 90px;
+  height: 30px;
+  margin-left: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #3379c1;
+  cursor: pointer;
+}
+.subscribe-modal .content .subscribe-channels ul li.active {
+  color: #000;
+  background-color: #fff;
+}
+.subscribe-modal .content .subscribe-list {
+  min-height: 300px;
+  margin: 10px;
+  overflow: hidden;
+}
+.subscribe-modal .content .subscribe-list .list-left {
+  float: left;
+}
+.subscribe-modal .content .subscribe-list .list-left .subscribe-site .website-list {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  border: 1px solid #d5d4d4;
+  overflow-y: auto;
+}
+.subscribe-modal .content .subscribe-list .list-left .subscribe-site .website-list h5 {
+  height: 30px;
+  line-height: 30px;
+  font-weight: 800;
+  text-align: center;
+  background-color: #f1f2f6;
+}
+.subscribe-modal .content .subscribe-list .list-left .subscribe-site .website-list ul li {
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+  cursor: pointer;
+}
+.subscribe-modal .content .subscribe-list .list-left .subscribe-site .website-list ul li.active {
+  color: #fff;
+  background-color: #3379c1;
+}
+.subscribe-modal .content .subscribe-list .list-right {
+  float: left;
+  width: 430px;
+  margin-left: 10px;
+}
+.subscribe-modal .path ul li {
+  position: relative;
+  float: left;
+  height: 30px;
+  margin: 12px 0 10px 0;
+  padding: 0 20px 0 10px;
+  border: 1px solid #ccc;
+}
+.subscribe-modal .path ul img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+.subscribe-modal .selectcontain {
+  margin-top: 10px;
+  overflow: hidden;
+}
+.subscribe-modal .selectcontain .selitem {
+  float: left;
+  border: 1px solid #cccccc;
+  position: relative;
+  padding: 0 20px 0 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.subscribe-modal .selectcontain .selitem p {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px;
+}
+.subscribe-modal .selectcontain .selitem p i {
+  font-style: normal;
+}
+.subscribe-modal .selectcontain .selitem img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border: 0;
+  cursor: pointer;
+}
+.subscribe-modal .footer {
+  height: 60px;
+  background-color: #f0f2f5;
+}
+.subscribe-modal .footer button {
+  float: right;
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  margin: 16px 10px 0 0;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+.subscribe-modal .footer .btn-confirm {
+  background-color: #3379c1;
+}
+.subscribe-modal .footer .btn-cancel {
+  background-color: #c1c1c1;
+}
+/* 站点栏目订阅弹窗 end */
+/* 左侧导航CSS样式 2017.3.2 end */
+/* 网站待编右侧样式2017.3.14 */
+.editing-main-header {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.editing-main-header .btn {
+  display: block;
+  float: left;
+  margin: 15px 10px 0 0;
+}
+.editing-main-header .btn-group {
+  display: block;
+  float: left;
+}
+.editing-main-header .btn-group .editing-dropdown-menu {
+  top: 42px;
+  width: 95px;
+  min-width: 95px;
+  margin: 0;
+  padding: 7px 5px;
+  border: 2px solid #2178c5;
+  border-radius: 0;
+}
+.editing-main-header .btn-group .editing-dropdown-menu li a {
+  height: 26px;
+  line-height: 26px;
+  padding: 0;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+}
+.editing-main-header .btn-group .editing-dropdown-menu li a:hover {
+  background-color: #eceff3;
+}
+.editing-main-header .btn-default {
+  width: 95px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  background-color: #1f5c8e;
+  border: none;
+}
+.editing-main-header .btn-default:hover {
+  background-color: #2178c5;
+}
+.editing-main-header .btn-default:hover .btn-icon {
+  border-right: 1px solid #1c70ba;
+}
+.editing-main-header .btn-default:hover .btn-icon.btn-new {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon01-hover.png") no-repeat;
+}
+.editing-main-header .btn-default:hover .btn-icon.btn-publish {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon04-hover.png") no-repeat;
+}
+.editing-main-header .btn-default .btn-icon {
+  display: inline-block;
+  vertical-align: -3px;
+  width: 23px;
+  height: 15px;
+  margin-left: 10px;
+  border-right: 1px solid #064679;
+}
+.editing-main-header .btn-default .btn-icon.btn-new {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon01.png") no-repeat;
+}
+.editing-main-header .btn-default .btn-icon.btn-send {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon02.png") no-repeat;
+}
+.editing-main-header .btn-default .btn-icon.btn-sign {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon03.png") no-repeat;
+}
+.editing-main-header .btn-default .btn-icon.btn-publish {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon04.png") no-repeat;
+}
+.editing-main-header .btn-default .btn-drop-icon {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon-drop.png") no-repeat;
+}
+.editing-main-header .btn-default:active,
+.editing-main-header .btn-default.active,
+.editing-main-header .open > .dropdown-toggle.btn-default,
+.editing-main-header .btn-default:active:hover,
+.editing-main-header .btn-default.active:hover,
+.editing-main-header .open > .dropdown-toggle.btn-default:hover,
+.editing-main-header .btn-default:active:focus,
+.editing-main-header .btn-default.active:focus,
+.editing-main-header .open > .dropdown-toggle.btn-default:focus,
+.editing-main-header .btn-default:active.focus,
+.editing-main-header .btn-default.active.focus,
+.editing-main-header .open > .dropdown-toggle.btn-default.focus {
+  color: #fff;
+  background-color: #2178c5;
+  border: none;
+  box-shadow: none;
+}
+.editing-main-header .btn-default:active .btn-icon,
+.editing-main-header .btn-default.active .btn-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default .btn-icon,
+.editing-main-header .btn-default:active:hover .btn-icon,
+.editing-main-header .btn-default.active:hover .btn-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default:hover .btn-icon,
+.editing-main-header .btn-default:active:focus .btn-icon,
+.editing-main-header .btn-default.active:focus .btn-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default:focus .btn-icon,
+.editing-main-header .btn-default:active.focus .btn-icon,
+.editing-main-header .btn-default.active.focus .btn-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default.focus .btn-icon {
+  border-right: 1px solid #1c70ba;
+}
+.editing-main-header .btn-default:active .btn-icon.btn-new,
+.editing-main-header .btn-default.active .btn-icon.btn-new,
+.editing-main-header .open > .dropdown-toggle.btn-default .btn-icon.btn-new,
+.editing-main-header .btn-default:active:hover .btn-icon.btn-new,
+.editing-main-header .btn-default.active:hover .btn-icon.btn-new,
+.editing-main-header .open > .dropdown-toggle.btn-default:hover .btn-icon.btn-new,
+.editing-main-header .btn-default:active:focus .btn-icon.btn-new,
+.editing-main-header .btn-default.active:focus .btn-icon.btn-new,
+.editing-main-header .open > .dropdown-toggle.btn-default:focus .btn-icon.btn-new,
+.editing-main-header .btn-default:active.focus .btn-icon.btn-new,
+.editing-main-header .btn-default.active.focus .btn-icon.btn-new,
+.editing-main-header .open > .dropdown-toggle.btn-default.focus .btn-icon.btn-new {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon01-hover.png") no-repeat;
+}
+.editing-main-header .btn-default:active .btn-icon.btn-publish,
+.editing-main-header .btn-default.active .btn-icon.btn-publish,
+.editing-main-header .open > .dropdown-toggle.btn-default .btn-icon.btn-publish,
+.editing-main-header .btn-default:active:hover .btn-icon.btn-publish,
+.editing-main-header .btn-default.active:hover .btn-icon.btn-publish,
+.editing-main-header .open > .dropdown-toggle.btn-default:hover .btn-icon.btn-publish,
+.editing-main-header .btn-default:active:focus .btn-icon.btn-publish,
+.editing-main-header .btn-default.active:focus .btn-icon.btn-publish,
+.editing-main-header .open > .dropdown-toggle.btn-default:focus .btn-icon.btn-publish,
+.editing-main-header .btn-default:active.focus .btn-icon.btn-publish,
+.editing-main-header .btn-default.active.focus .btn-icon.btn-publish,
+.editing-main-header .open > .dropdown-toggle.btn-default.focus .btn-icon.btn-publish {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon04-hover.png") no-repeat;
+}
+.editing-main-header .btn-default:active .btn-drop-icon,
+.editing-main-header .btn-default.active .btn-drop-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default .btn-drop-icon,
+.editing-main-header .btn-default:active:hover .btn-drop-icon,
+.editing-main-header .btn-default.active:hover .btn-drop-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default:hover .btn-drop-icon,
+.editing-main-header .btn-default:active:focus .btn-drop-icon,
+.editing-main-header .btn-default.active:focus .btn-drop-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default:focus .btn-drop-icon,
+.editing-main-header .btn-default:active.focus .btn-drop-icon,
+.editing-main-header .btn-default.active.focus .btn-drop-icon,
+.editing-main-header .open > .dropdown-toggle.btn-default.focus .btn-drop-icon {
+  background: url("editingCenter/images/blue-skin/editing-rightbtn_icon-drop-hover.png") no-repeat;
+}
+.editing-main-header .btn-more {
+  background-color: #b2b2b2;
+}
+.editing-main-header .btn-more span {
+  padding-left: 21px;
+  color: #fff;
+}
+/* 网站待编右侧样式2017.3.14 end */
+/* 网站待编右侧列表 */
+.editing-table-nav {
+  height: 70px;
+  padding-top: 17px;
+  background-color: #fff;
+}
+.editing-table-nav .nav-column {
+  float: left;
+  margin: 6px 25px 0 0;
+}
+.editing-table-nav .nav-column .s-onlyme {
+  float: left;
+  color: #797d82;
+}
+.editing-table {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  overflow: hidden;
+  /* img {
+        cursor: pointer;
+    } */
+}
+.editing-table table {
+  margin-bottom: 10px;
+}
+.editing-table table thead {
+  background-color: #f5f5f5;
+}
+.editing-table table thead th {
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  color: #4a4a4a;
+  border-bottom: 1px solid #ebebeb;
+}
+.editing-table table tbody tr td {
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  color: #4a4a4a;
+}
+.editing-table table tbody tr td a {
+  color: #4a4a4a;
+}
+.editing-table table tbody tr td a:hover {
+  color: #015293;
+}
+.editing-table table tbody tr td.td-website-column,
+.editing-table table tbody tr td.td-website-type,
+.editing-table table tbody tr td.td-website-user,
+.editing-table table tbody tr td.td-website-date {
+  color: #999;
+}
+.editing-table table tbody tr.selected-row {
+  /* -webkit-box-shadow:inset 0 0 7px #d8dade;
+                    -moz-box-shadow:inset 0 0 7px #d8dade;
+                    box-shadow:inset 0 0 7px #d8dade; */
+}
+.editing-table table .td-check {
+  width: 40px;
+  padding-left: 12px;
+  text-align: left;
+}
+.editing-table table .td-number {
+  width: 70px;
+  padding-right: 25px;
+}
+.editing-table table .td-left {
+  text-align: left;
+}
+.editing-table table .td-wordbreak {
+  word-break: break-all;
+}
+.editing-table table .td-website-column {
+  width: 120px;
+}
+.editing-table table .td-website-type {
+  width: 60px;
+}
+.editing-table table .td-website-user {
+  width: 86px;
+}
+.editing-table table .td-website-date {
+  width: 154px;
+}
+.editing-table table .td-website-picture {
+  width: 64px;
+}
+.editing-table table .td-show-icon {
+  margin-left: 10px;
+}
+.editing-table .mgr5 {
+  margin-right: 7px;
+}
+.editing-table li {
+  list-style: none;
+}
+.editing-table a {
+  cursor: pointer;
+}
+.editing-table .hidden-operate span.inblock {
+  display: inline-block;
+  width: 60px;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(2n) {
+  background: #f5f5f5;
+}
+table thead tr th {
+  text-align: center;
+}
+table tbody tr td {
+  text-align: center;
+}
+table tbody tr td a:link,
+table tbody tr td a:visited,
+table tbody tr td a:hover,
+table tbody tr td a:active {
+  text-decoration: none;
+}
+/* 分页 page&pagination */
+.page_left {
+  float: left;
+  margin-left: 100px;
+}
+.page {
+  height: 85px;
+  /* overflow: hidden*/
+}
+.page p {
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #7c7d81;
+}
+.page p.magrin-fixed20 {
+  margin-top: 24px;
+  margin-left: 20px;
+}
+.page1 {
+  overflow: hidden;
+  height: 70px;
+}
+.page1 p {
+  float: left;
+  margin-top: 25px;
+  margin-left: 50px;
+  color: #7c7d81;
+}
+.page1 p.magrin-fixed20 {
+  margin-left: 20px;
+}
+/* 分页 page&pagination end */
+/* 网站待编右侧列表  end */
+/* 页脚footer */
+.editing-footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+/* 页脚footer end */
+/* media screen 2017.3.10 */
+/* @media (min-width: 992px) {
+    
+} */
+/* media screen 2017.3.10 */
+@media screen and (max-width: 1366px) {
+  .editing-downlist .tab-content treecontrol ul li {
+    display: block;
+  }
+}
+.editing-site .editing-site-list {
+  padding-left: 45px;
+  background: #015293 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
+}
+.editing-site .site-mark {
+  width: 15px;
+  height: 15px;
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon02.png") no-repeat center;
+}
+.editing-site .site-mark.isDropdown {
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon03.png") no-repeat center;
+}
+.editing-column .editing-column-mark {
+  width: 15px;
+  height: 15px;
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon02.png") no-repeat center;
+}
+.editing-subscribe .editing-subscribe-list {
+  padding-left: 45px;
+  background: #3379c1 url("editingCenter/images/blue-skin/editing-leftnav_icon10.png") no-repeat 17px center;
+}
+.editing-subscribe .subscribe-btn {
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon11.png") no-repeat center;
+}
+.editing-subscribe .subscribe-mark {
+  width: 15px;
+  height: 15px;
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon02.png") no-repeat center;
+}
+.editing-subscribe .subscribe-mark.isDropdown {
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon03.png") no-repeat center;
+}
+.subscribe-list-wrap .subscribe-column-mark {
+  width: 15px;
+  height: 15px;
+  background: url("editingCenter/images/blue-skin/editing-leftnav_icon02.png") no-repeat center;
+}
+.editing-drop-draft {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  margin: 10px auto;
+  text-align: center;
+  background: #cc3633 url("../editingCenter/images/blue-skin/editing-leftnav_draft.png") no-repeat 38px center;
+  cursor: pointer;
+}
+.editing-drop-draft .text {
+  margin-left: 8px;
+  color: #fff;
+}
+.editing-table .td-comment {
+  width: 53px;
+  padding-right: 8px;
+}
+.editing-table .td-comment .comment {
+  display: none;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 14px;
+  background: url("editingCenter/images/blue-skin/editing-table_comment.png") no-repeat center;
+  cursor: pointer;
+}
+.editing-table .td-comment .view {
+  display: none;
+  float: right;
+  width: 18px;
+  height: 16px;
+  margin-top: 14px;
+  padding: 2px 0;
+  background: url("editingCenter/images/blue-skin/editing-table_view.png") no-repeat center;
+  cursor: pointer;
+}
+.editing-table tbody tr:hover {
+  filter: drop-shadow(0 0 5px #666);
+}
+.editing-table tbody tr:hover .comment,
+.editing-table tbody tr:hover .view {
+  display: block;
+}
+/*分页导航 设计稿灰调主题*/
+/*2017/3/23*/
+.pagination-theme-grey {
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+}
+.pagination-theme-grey .trsPager {
+  /*自定义上下页指令样式*/
+}
+.pagination-theme-grey .trsPager-btn-prev {
+  background: #c8ccd7 url("components/util/trsPager/images/pager-prev.png") no-repeat center;
+}
+.pagination-theme-grey .trsPager-btn-next {
+  background: #c8ccd7 url("components/util/trsPager/images/pager-next.png") no-repeat center;
+}
+.pagination-theme-grey .trsPager a {
+  border: none;
+}
+.pagination-theme-grey .trsPager a:hover {
+  border: none;
+  background-color: #337ab7;
+}
+.pagination-theme-grey .trsPager a[ng-disabled="true"] {
+  cursor: not-allowed;
+}
+.pagination-theme-grey .trsPager a[ng-disabled="true"]:hover {
+  background-color: #c8ccd7;
+}
+.pagination-theme-grey .pagination {
+  /*bootstrap的分页*/
+  margin: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.pagination-theme-grey .pagination > li > a {
+  float: none;
+  background: none;
+  border: none;
+  color: #787878;
+  font-size: 14px;
+}
+.pagination-theme-grey .pagination > li > a:after {
+  content: "/";
+  color: #e1e1e1;
+  font-size: 14px;
+  padding-left: 15px;
+  font-weight: normal;
+}
+.pagination-theme-grey .pagination > li:last-child a:after {
+  content: "";
+}
+.pagination-theme-grey .pagination > li.active > a {
+  background: none;
+  border: none;
+  color: #2178c5;
+  font-weight: bold;
+}
+.pagination-theme-grey trs-pagenation-right {
+  /*分页跳转指令样式*/
+}
+.pagination-theme-grey trs-pagenation-right p {
+  vertical-align: middle;
+  margin-top: 0!important;
+  margin-left: 0!important;
+  float: none;
+  display: inline-block;
+}
+.pagination-theme-grey trs-pagenation-right p .page_go {
+  width: 36px;
+  height: 23px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+  font-size: 12px;
+}
+.pagination-theme-grey trs-pagenation-right p .btn_jump {
+  width: 42px;
+  height: 23px;
+  background: #416891;
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  border: none;
+  vertical-align: baseline;
+}

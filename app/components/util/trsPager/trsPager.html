@@ -1,0 +1,4 @@
+<div class="trsPager">
+    <a href="" ng-hide="{{previousHide}}" ng-disabled="{{curPage<=1}}" ng-click="setPage(curPage-1,callback)" class="trsPager-btn-prev" ng-bind="previousText"></a>
+    <a href="" ng-hide="{{nextHide}}" ng-disabled="{{curPage>=pagesSize}}" ng-click="setPage(curPage+1,callback)" class="trsPager-btn-next" ng-bind="nextText"></a>
+</div>

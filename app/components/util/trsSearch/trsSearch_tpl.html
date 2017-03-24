@@ -1,0 +1,13 @@
+<div class="col-md-6 text-align-right">
+    <div class="input-group edit_input_group">
+        <!--<input type="text" class="form-control edit_form_control" placeholder="请输入关键字搜索" ng-model="keywords" ng-keypress="fullTextSearch($event)">-->
+        <!--<span class="input-group-btn">
+                <button class="btn btn-default btn_edit_search" type="button" ng-click="fullTextSearch()">搜索</button>
+            </span>-->
+        <!--<div class="input-group">-->
+            <input type="text" class="form-control" placeholder="请输入关键字搜索" ng-model="keywords" ng-keypress="fullTextSearch($event)">
+            <span class="input-group-addon btn-search"  ng-click="fullTextSearch()"></span>
+        <!--</div>-->
+    </div>
+    <trs-single-select selected-option="data.websiteAllSelected" callback="queryByWebsiteAll()" options="data.websiteAll" class="pull-right"></trs-single-select>
+</div>

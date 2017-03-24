@@ -1,0 +1,35 @@
+.trsPager {
+  display: inline-block;
+}
+.trsPager a {
+  display: inline-block;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 16px;
+  padding: 4px;
+  min-width: 30px;
+  min-height: 28px;
+  vertical-align: middle;
+}
+.trsPager a:hover {
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.trsPager a:active {
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.trsPager a[ng-disabled="true"] {
+  cursor: not-allowed;
+}
+.trsPager a[ng-disabled="true"]:hover {
+  color: #337ab7;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}

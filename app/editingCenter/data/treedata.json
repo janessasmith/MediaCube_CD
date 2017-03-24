@@ -1,0 +1,17 @@
+[{
+	"HASCHILDREN": "true",
+	"CHNLNAME": "基金",
+	"CHNLTYPE": "0",
+	"PARENTID": "4",
+	"CHANNELID": "5",
+	"CHNLDESC": "基金",
+	"SITEID": "1"
+}, {
+	"HASCHILDREN": "false",
+	"CHNLNAME": "股票",
+	"CHNLTYPE": "0",
+	"PARENTID": "4",
+	"CHANNELID": "6",
+	"CHNLDESC": "股票",
+	"SITEID": "1"
+}]

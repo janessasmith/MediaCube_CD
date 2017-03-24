@@ -1,0 +1,154 @@
+/*header导航条*/
+.header-bar {
+    height: 90px;
+    background: url('./login/img/cd-head-bac.jpg') no-repeat center;
+    overflow: hidden;
+
+    .logo-box {
+        float: left;
+    }
+    .img-responsive {
+        margin: 36px 0 0 28px;
+    }
+}
+.nav-bar-box {
+    float: right;
+
+    .nav-bar {
+        float: left;
+
+        ul {
+            margin: 52px 27px 0 0;
+            padding-top: 4px;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            width: 115px;
+            height: 34px;
+            line-height: 34px;
+            margin-right: 4px;
+            border-radius: 3px 3px 0 0;
+            text-align: center;
+            font: 14px/34px 'Microsoft YaHei', '微软雅黑';
+            background: rgba(1, 87, 164, .6);
+            list-style: none;
+
+            &:hover {
+                margin-top: -4px;
+                height: 38px;
+                line-height: 40px;
+                background: #015293;
+            }
+            &.is-active {
+                margin-top: -4px;
+                height: 38px;
+                line-height: 40px;
+                background: #015293;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+            }
+            span {
+                padding: 5px 0 5px 28px;
+                &.icon-edit {
+                    background: url('./editingCenter/images/nav-1.png') no-repeat left center;
+                }
+                &.icon-interact {
+                    background: url('./editingCenter/images/nav-2.png') no-repeat left center;
+                }
+                &.icon-search {
+                    background: url('./editingCenter/images/nav-3.png') no-repeat left center;
+                }
+                &.icon-check {
+                    background: url('./editingCenter/images/nav-4.png') no-repeat left center;
+                }
+                &.icon-run {
+                    background: url('./editingCenter/images/nav-5.png') no-repeat left center;
+                }
+            }
+        }
+    }
+}
+.header-rt-box {
+    float: right;
+    height: 55px;
+    margin-top: 35px;
+
+    .theme-pick {
+        float: left;
+        width: 92px;
+        height: 24px;
+        line-height: 24px;
+        margin-top: 19px;
+        border-radius: 12px;
+        font-size: 0;
+        text-align: center;
+        background: rgba(255, 255, 255, .6);
+
+        .theme {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span {
+            display: block;
+            width: 13px;
+            height: 13px;
+            margin: 0 3px;
+            border-radius: 50%;
+            cursor: pointer;
+            float: left;
+
+            &:hover {
+                width: 17px;
+                height: 17px;
+                margin: -2px 1px;
+            }
+            &.is-active {
+                width: 17px;
+                height: 17px;
+                margin: -2px 1px;
+            }
+        }
+        .red-theme {
+            background: #d33d3c;
+        }
+        .blue-theme {
+            background: #165f97;
+        }
+        .green-theme {
+            background: #48bc8a;
+        }
+        .orange-theme {
+            background: #f5b433;
+        }
+    }
+    .login-user {
+        float: left;
+        width: 34px;
+        height: 34px;
+        margin: 7px 7px 0 12px;
+        border: 2px solid rgba(255, 255, 255, .75);
+        cursor: pointer;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .settings {
+        float: left;
+        width: 23px;
+        height: 23px;
+        margin: 19px 12px 0 0;
+        a {
+            display: block;
+            height: 23px;
+            background: url("./editingCenter/images/nav-6.png") no-repeat center;
+        }
+    }
+}
